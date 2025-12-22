@@ -1,0 +1,28 @@
+﻿@model test_apps_3.Models.ViewModel.AddStudentRequest
+
+@{
+    ViewData["Title"] = "Add Student";
+}
+
+<h2>Add Student</h2>
+
+<form asp-action="Add" method="post">
+    <div>
+        <label>Name</label><br />
+        <input asp-for="Name" />
+    </div>
+
+    <div>
+        <label>Email</label><br />
+        <input asp-for="Email" />
+    </div>
+
+    <div>
+        <label>Session</label><br />
+        <input asp-for="session" />
+    </div>
+
+    <br />
+
+    <button type="submit">Add Student</button>
+</form>

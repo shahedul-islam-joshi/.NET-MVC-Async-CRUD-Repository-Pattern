@@ -1,0 +1,40 @@
+﻿@model IEnumerable<test_apps_3.Models.DomainModel.Student>
+
+@{
+    ViewData["Title"] = "Student List";
+}
+
+<h2>Student List</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <p style="color:red; font-weight:bold;">
+        No student record found.
+    </p>
+}
+else
+{
+    <table border="1" cellpadding="5">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Session</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.Id</td>
+                    <td>@student.Name</td>
+                    <td>@student.Email</td>
+                    <td>@student.session</td>
+                    <td><a asp-controller="AdminStudent" asp-action="Edit" asp-route-id="@student.Id">Edit</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
