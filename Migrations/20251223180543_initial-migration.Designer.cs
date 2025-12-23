@@ -11,8 +11,8 @@ using test_apps_3.Data;
 namespace test_apps_3.Migrations
 {
     [DbContext(typeof(AppsDbContext))]
-    [Migration("20251222174558_initial")]
-    partial class initial
+    [Migration("20251223180543_initial-migration")]
+    partial class initialmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace test_apps_3.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("test_apps_3.Models.DomainModel.Student", b =>
+            modelBuilder.Entity("test_apps_3.Models.DomainModel.StudentClass", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -43,7 +43,7 @@ namespace test_apps_3.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("_Students");
+                    b.ToTable("_StudentsTable");
                 });
 #pragma warning restore 612, 618
         }

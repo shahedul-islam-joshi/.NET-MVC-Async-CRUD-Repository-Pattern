@@ -21,7 +21,7 @@ namespace test_apps_3.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("test_apps_3.Models.DomainModel.Student", b =>
+            modelBuilder.Entity("test_apps_3.Models.DomainModel.StudentClass", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -40,7 +40,7 @@ namespace test_apps_3.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("_Students");
+                    b.ToTable("_StudentsTable");
                 });
 #pragma warning restore 612, 618
         }

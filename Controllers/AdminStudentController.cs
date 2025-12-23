@@ -22,13 +22,13 @@ namespace test_apps_3.Controllers
         [HttpPost]
         public IActionResult Add(AddStudentRequest addStudentRequest)
         {
-            var studentAdd = new Student
+            var studentAdd = new StudentClass
             {
                 Name = addStudentRequest.Name,
                 Email = addStudentRequest.Email,
                 session = addStudentRequest.session
             };
-            _appsDbContext._Students.Add(studentAdd);
+            _appsDbContext._StudentsTable.Add(studentAdd);
             _appsDbContext.SaveChanges();
             return RedirectToAction("List");
         }
@@ -36,14 +36,14 @@ namespace test_apps_3.Controllers
         [HttpGet]
         public IActionResult List()
         {
-            var studentList = _appsDbContext._Students.ToList();
+            var studentList = _appsDbContext._StudentsTable.ToList();
             return View(studentList);
         }
 
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var studentEdit = _appsDbContext._Students.FirstOrDefault(x=>x.Id==id);
+            var studentEdit = _appsDbContext._StudentsTable.FirstOrDefault(x=>x.Id==id);
             if (studentEdit != null)
             {
                 var editStudentRequest = new EditStudentRequest
@@ -61,14 +61,14 @@ namespace test_apps_3.Controllers
         [HttpPost]
         public IActionResult Edit(EditStudentRequest editStudentRequest)
         {
-            var _studentEdit = new Student
+            var _studentEdit = new StudentClass
             {
                 Id = editStudentRequest.Id,
                 Name = editStudentRequest.Name,
                 Email = editStudentRequest.Email,
                 session = editStudentRequest.session
             };
-            var existingStudent = _appsDbContext._Students.Find(editStudentRequest.Id);
+            var existingStudent = _appsDbContext._StudentsTable.Find(editStudentRequest.Id);
             if (existingStudent != null)
             {
                 {
@@ -84,10 +84,10 @@ namespace test_apps_3.Controllers
         [HttpPost]
         public IActionResult Delete(int id)
         {
-            var studentDelete = _appsDbContext._Students.Find(id);
+            var studentDelete = _appsDbContext._StudentsTable.Find(id);
             if (studentDelete != null)
             {
-                _appsDbContext._Students.Remove(studentDelete);
+                _appsDbContext._StudentsTable.Remove(studentDelete);
                 _appsDbContext.SaveChanges();
             }
             return RedirectToAction("List");

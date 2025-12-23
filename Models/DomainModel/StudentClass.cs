@@ -1,6 +1,6 @@
 ﻿namespace test_apps_3.Models.DomainModel
 {
-    public class Student
+    public class StudentClass
     {
         public int Id { get; set; }
         public string? Name { get; set; }

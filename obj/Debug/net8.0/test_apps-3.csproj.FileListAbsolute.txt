@@ -144,3 +144,4 @@ E:\.NET project\test_apps-3\test_apps-3\obj\Debug\net8.0\refint\test_apps-3.dll
 E:\.NET project\test_apps-3\test_apps-3\obj\Debug\net8.0\test_apps-3.pdb
 E:\.NET project\test_apps-3\test_apps-3\obj\Debug\net8.0\test_apps-3.genruntimeconfig.cache
 E:\.NET project\test_apps-3\test_apps-3\obj\Debug\net8.0\ref\test_apps-3.dll
+E:\.NET project\test_apps-3\test_apps-3\obj\Debug\net8.0\test_apps-3.sourcelink.json

@@ -8,6 +8,6 @@ namespace test_apps_3.Data
         public AppsDbContext(DbContextOptions options) : base (options) 
         {
         }
-        public DbSet<Student> _Students { get; set; }
+        public DbSet<StudentClass> _StudentsTable { get; set; }
     }
 }

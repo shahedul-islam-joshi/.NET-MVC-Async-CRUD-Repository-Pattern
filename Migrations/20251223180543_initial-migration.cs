@@ -5,13 +5,13 @@
 namespace test_apps_3.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class initialmigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "_Students",
+                name: "_StudentsTable",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -22,7 +22,7 @@ namespace test_apps_3.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__Students", x => x.Id);
+                    table.PrimaryKey("PK__StudentsTable", x => x.Id);
                 });
         }
 
@@ -30,7 +30,7 @@ namespace test_apps_3.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "_Students");
+                name: "_StudentsTable");
         }
     }
 }
