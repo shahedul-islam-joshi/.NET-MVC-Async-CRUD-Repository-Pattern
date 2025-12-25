@@ -1,28 +1,41 @@
-# 🎓 Student Management System (ASP.NET Core MVC)
+# ASP.NET Core MVC – Async Repository Pattern CRUD
 
-A beginner-friendly **ASP.NET Core MVC** application to manage student records.  
-This project demonstrates **CRUD operations** using **Entity Framework Core** and **SQL Server**.
+This project is a **Student Management CRUD application** built with **ASP.NET Core MVC**.  
+It demonstrates **asynchronous programming**, **Repository Pattern**, and **interface-based abstraction** using **Entity Framework Core**.
 
 ---
 
 ## 🚀 Features
 
-- ➕ Add new students
-- 📄 View student list
-- ✏ Edit student information
-- 🗑 Delete students with confirmation
-- 🧱 MVC architecture (Controller, ViewModel, Domain Model)
-- 🗄 Entity Framework Core (Code First)
+- ✅ ASP.NET Core MVC architecture
+- ✅ CRUD operations (Create, Read, Update, Delete)
+- ✅ Asynchronous programming (`async` / `await`)
+- ✅ Repository Pattern
+- ✅ Interface-based abstraction
+- ✅ Entity Framework Core
+- ✅ SQL Server database
+- ✅ Clean separation of concerns
+- ✅ Dependency Injection
 
 ---
 
-## 🛠 Technologies Used
+
+
+
+## 🔧 Technologies Used
 
 - ASP.NET Core MVC
 - Entity Framework Core
 - SQL Server
-- Bootstrap 5
-- Razor Views
 - C#
+- Razor Views
+- Bootstrap
 
 ---
+
+
+## ⚙️ How to Run
+1. Clone the repo: `git clone https://github.com/shahedul-islam-joshi/.NET-MVC-Async-CRUD-Repository-Pattern.git`
+2. Update the Connection String in `appsettings.json`.
+3. Run migrations: `Update-Database` in Package Manager Console.
+4. Press `F5` or run `dotnet run`.
