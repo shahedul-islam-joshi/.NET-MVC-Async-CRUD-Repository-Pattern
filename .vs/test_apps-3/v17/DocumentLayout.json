@@ -1,50 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\.NET project\\test_apps-3\\test_apps-3\\",
+  "WorkspaceRootPath": "E:\\.NET project\\test_apps-asynchronous\\test_apps-assynchronous\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-3\\test_apps-3\\models\\domainmodel\\studentclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:models\\domainmodel\\studentclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-3\\test_apps-3\\controllers\\adminstudentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-asynchronous\\test_apps-assynchronous\\controllers\\adminstudentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:controllers\\adminstudentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-3\\test_apps-3\\data\\appsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:data\\appsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-asynchronous\\test_apps-assynchronous\\repository\\studentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:repository\\studentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-3\\test_apps-3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-3\\test_apps-3\\views\\adminstudent\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:views\\adminstudent\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-3\\test_apps-3\\models\\viewmodel\\addstudentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:models\\viewmodel\\addstudentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-3\\test_apps-3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-3\\test_apps-3\\views\\adminstudent\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:views\\adminstudent\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-3\\test_apps-3\\views\\adminstudent\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:views\\adminstudent\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-3\\test_apps-3\\models\\viewmodel\\editstudentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:models\\viewmodel\\editstudentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-3\\test_apps-3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|e:\\.net project\\test_apps-asynchronous\\test_apps-assynchronous\\repository\\istudentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB9CEBE-4E57-4C25-B3C8-69CA6367CF4D}|test_apps-3.csproj|solutionrelative:repository\\istudentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,151 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\.NET project\\test_apps-3\\test_apps-3\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "E:\\.NET project\\test_apps-3\\test_apps-3\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-23T17:57:57.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "E:\\.NET project\\test_apps-3\\test_apps-3\\Views\\AdminStudent\\Add.cshtml",
-              "RelativeDocumentMoniker": "Views\\AdminStudent\\Add.cshtml",
-              "ToolTip": "E:\\.NET project\\test_apps-3\\test_apps-3\\Views\\AdminStudent\\Add.cshtml",
-              "RelativeToolTip": "Views\\AdminStudent\\Add.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-22T17:54:12.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddStudentRequest.cs",
-              "DocumentMoniker": "E:\\.NET project\\test_apps-3\\test_apps-3\\Models\\ViewModel\\AddStudentRequest.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModel\\AddStudentRequest.cs",
-              "ToolTip": "E:\\.NET project\\test_apps-3\\test_apps-3\\Models\\ViewModel\\AddStudentRequest.cs",
-              "RelativeToolTip": "Models\\ViewModel\\AddStudentRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "IStudentRepo.cs",
+              "DocumentMoniker": "E:\\.NET project\\test_apps-asynchronous\\test_apps-assynchronous\\Repository\\IStudentRepo.cs",
+              "RelativeDocumentMoniker": "Repository\\IStudentRepo.cs",
+              "ToolTip": "E:\\.NET project\\test_apps-asynchronous\\test_apps-assynchronous\\Repository\\IStudentRepo.cs",
+              "RelativeToolTip": "Repository\\IStudentRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T17:50:38.506Z",
+              "WhenOpened": "2025-12-25T09:48:31.352Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AdminStudentController.cs",
-              "DocumentMoniker": "E:\\.NET project\\test_apps-3\\test_apps-3\\Controllers\\AdminStudentController.cs",
+              "DocumentMoniker": "E:\\.NET project\\test_apps-asynchronous\\test_apps-assynchronous\\Controllers\\AdminStudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminStudentController.cs",
-              "ToolTip": "E:\\.NET project\\test_apps-3\\test_apps-3\\Controllers\\AdminStudentController.cs",
+              "ToolTip": "E:\\.NET project\\test_apps-asynchronous\\test_apps-assynchronous\\Controllers\\AdminStudentController.cs",
               "RelativeToolTip": "Controllers\\AdminStudentController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAjwCYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-22T17:47:40.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\.NET project\\test_apps-3\\test_apps-3\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\.NET project\\test_apps-3\\test_apps-3\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "StudentRepo.cs",
+              "DocumentMoniker": "E:\\.NET project\\test_apps-asynchronous\\test_apps-assynchronous\\Repository\\StudentRepo.cs",
+              "RelativeDocumentMoniker": "Repository\\StudentRepo.cs",
+              "ToolTip": "E:\\.NET project\\test_apps-asynchronous\\test_apps-assynchronous\\Repository\\StudentRepo.cs",
+              "RelativeToolTip": "Repository\\StudentRepo.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwCgAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T17:31:08.055Z",
+              "WhenOpened": "2025-12-25T09:08:56.027Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppsDbContext.cs",
-              "DocumentMoniker": "E:\\.NET project\\test_apps-3\\test_apps-3\\Data\\AppsDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppsDbContext.cs",
-              "ToolTip": "E:\\.NET project\\test_apps-3\\test_apps-3\\Data\\AppsDbContext.cs",
-              "RelativeToolTip": "Data\\AppsDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T17:20:51.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentClass.cs",
-              "DocumentMoniker": "E:\\.NET project\\test_apps-3\\test_apps-3\\Models\\DomainModel\\StudentClass.cs",
-              "RelativeDocumentMoniker": "Models\\DomainModel\\StudentClass.cs",
-              "ToolTip": "E:\\.NET project\\test_apps-3\\test_apps-3\\Models\\DomainModel\\StudentClass.cs",
-              "RelativeToolTip": "Models\\DomainModel\\StudentClass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T15:37:54.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "List.cshtml",
-              "DocumentMoniker": "E:\\.NET project\\test_apps-3\\test_apps-3\\Views\\AdminStudent\\List.cshtml",
-              "RelativeDocumentMoniker": "Views\\AdminStudent\\List.cshtml",
-              "ToolTip": "E:\\.NET project\\test_apps-3\\test_apps-3\\Views\\AdminStudent\\List.cshtml",
-              "RelativeToolTip": "Views\\AdminStudent\\List.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-22T18:07:29.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "E:\\.NET project\\test_apps-3\\test_apps-3\\Views\\AdminStudent\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\AdminStudent\\Edit.cshtml",
-              "ToolTip": "E:\\.NET project\\test_apps-3\\test_apps-3\\Views\\AdminStudent\\Edit.cshtml",
-              "RelativeToolTip": "Views\\AdminStudent\\Edit.cshtml",
-              "ViewState": "AgIAABoAAAAAAAAAAAAkwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-22T19:09:00.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EditStudentRequest.cs",
-              "DocumentMoniker": "E:\\.NET project\\test_apps-3\\test_apps-3\\Models\\ViewModel\\EditStudentRequest.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModel\\EditStudentRequest.cs",
-              "ToolTip": "E:\\.NET project\\test_apps-3\\test_apps-3\\Models\\ViewModel\\EditStudentRequest.cs",
-              "RelativeToolTip": "Models\\ViewModel\\EditStudentRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T19:25:06.507Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\.NET project\\test_apps-3\\test_apps-3\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "E:\\.NET project\\test_apps-3\\test_apps-3\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-22T18:14:33.687Z"
             }
           ]
         }

@@ -1,17 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using test_apps_3.Data;
 using test_apps_3.Models.DomainModel;
 using test_apps_3.Models.ViewModel;
+using test_apps_3.Repository;
 
 namespace test_apps_3.Controllers
 {
     public class AdminStudentController : Controller
     {
-        private readonly AppsDbContext _appsDbContext;
+        private readonly IStudentRepo _studentRepo;
 
-        public AdminStudentController(AppsDbContext appsDbContext)
+        public AdminStudentController(IStudentRepo studentRepo)
         {
-            this._appsDbContext = appsDbContext;
+            this._studentRepo = studentRepo;
         }
         [HttpGet]
         public IActionResult Add()
@@ -20,7 +22,7 @@ namespace test_apps_3.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(AddStudentRequest addStudentRequest)
+        public async Task<IActionResult> Add(AddStudentRequest addStudentRequest)
         {
             var studentAdd = new StudentClass
             {
@@ -28,30 +30,29 @@ namespace test_apps_3.Controllers
                 Email = addStudentRequest.Email,
                 session = addStudentRequest.session
             };
-            _appsDbContext._StudentsTable.Add(studentAdd);
-            _appsDbContext.SaveChanges();
+            _studentRepo.AddAsync(studentAdd);
             return RedirectToAction("List");
         }
 
         [HttpGet]
-        public IActionResult List()
+        public async Task<IActionResult> List()
         {
-            var studentList = _appsDbContext._StudentsTable.ToList();
+            var studentList = await _studentRepo.GetAllAsync();
             return View(studentList);
         }
 
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var studentEdit = _appsDbContext._StudentsTable.FirstOrDefault(x=>x.Id==id);
-            if (studentEdit != null)
+            var viewForEdit = await _studentRepo.GetAsync(id);
+            if (viewForEdit != null)
             {
                 var editStudentRequest = new EditStudentRequest
                 {
-                    Id = studentEdit.Id,
-                    Name = studentEdit.Name,
-                    Email = studentEdit.Email,
-                    session = studentEdit.session
+                    Id = viewForEdit.Id,
+                    Name = viewForEdit.Name,
+                    Email = viewForEdit.Email,
+                    session = viewForEdit.session
                 };
                 return View(editStudentRequest);
             }
@@ -59,7 +60,7 @@ namespace test_apps_3.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(EditStudentRequest editStudentRequest)
+        public async Task<IActionResult> Edit(EditStudentRequest editStudentRequest)
         {
             var _studentEdit = new StudentClass
             {
@@ -68,27 +69,21 @@ namespace test_apps_3.Controllers
                 Email = editStudentRequest.Email,
                 session = editStudentRequest.session
             };
-            var existingStudent = _appsDbContext._StudentsTable.Find(editStudentRequest.Id);
-            if (existingStudent != null)
+            var updatedStudent = await _studentRepo.UpdateAsync(_studentEdit);
+            if (updatedStudent != null)
             {
-                {
-                    existingStudent.Name = editStudentRequest.Name;
-                    existingStudent.Email = editStudentRequest.Email;
-                    existingStudent.session = editStudentRequest.session;
-                }
-                _appsDbContext.SaveChanges();
+                return RedirectToAction("List");
             }
             return RedirectToAction("List");
         }
 
         [HttpPost]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(EditStudentRequest editStudentRequest)
         {
-            var studentDelete = _appsDbContext._StudentsTable.Find(id);
-            if (studentDelete != null)
+            var deletedstudent = await _studentRepo.DeleteAsync(editStudentRequest.Id);
+            if (deletedstudent != null)
             {
-                _appsDbContext._StudentsTable.Remove(studentDelete);
-                _appsDbContext.SaveChanges();
+                return RedirectToAction("List");
             }
             return RedirectToAction("List");
         }
