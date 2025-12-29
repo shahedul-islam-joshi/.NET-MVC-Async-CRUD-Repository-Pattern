@@ -4,37 +4,67 @@
     ViewData["Title"] = "Student List";
 }
 
-<h2>Student List</h2>
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Student List</h2>
+        <a asp-action="Add" class="btn btn-primary">Add New Student</a>
+    </div>
 
-@if (Model == null || !Model.Any())
-{
-    <p style="color:red; font-weight:bold;">
-        No student record found.
-    </p>
-}
-else
-{
-    <table border="1" cellpadding="5">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Session</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var student in Model)
-            {
-                <tr>
-                    <td>@student.Id</td>
-                    <td>@student.Name</td>
-                    <td>@student.Email</td>
-                    <td>@student.session</td>
-                    <td><a asp-controller="AdminStudent" asp-action="Edit" asp-route-id="@student.Id">Edit</a></td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-warning">
+            No student records found.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Session</th>
+                        <th>Gender</th>
+                        <th>Date of Birth</th>
+                        <th>Address</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var student in Model)
+                    {
+                        <tr>
+                            <td class="text-center">
+                                @if (student.ProfilePicture != null)
+                                {
+                                    <img src="data:image/jpeg;base64,@Convert.ToBase64String(student.ProfilePicture)"
+                                         alt="Profile"
+                                         style="width:50px; height:50px; object-fit:cover; border-radius:50%;" />
+                                }
+                                else
+                                {
+                                    <div class="bg-secondary text-white rounded-circle d-inline-block"
+                                         style="width:50px; height:50px; line-height:50px;">
+                                        N/A
+                                    </div>
+                                }
+                            </td>
+                            <td>@student.Name</td>
+                            <td>@student.Email</td>
+                            <td>@student.session</td>
+                            <td>@student.Gender</td>
+                            <td>@student.Date.ToString("dd MMM yyyy")</td>
+                            <td>@student.Address</td>
+                            <td>
+                                <a asp-controller="AdminStudent" asp-action="Edit" asp-route-id="@student.Id"
+                                   class="btn btn-sm btn-info text-white">Edit</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

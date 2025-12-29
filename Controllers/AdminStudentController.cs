@@ -28,9 +28,20 @@ namespace test_apps_3.Controllers
             {
                 Name = addStudentRequest.Name,
                 Email = addStudentRequest.Email,
-                session = addStudentRequest.session
+                session = addStudentRequest.session,
+                Address = addStudentRequest.Address,
+                Gender = addStudentRequest.Gender,
+                Date = addStudentRequest.Date
             };
-            _studentRepo.AddAsync(studentAdd);
+
+            if (addStudentRequest.ProfileImage != null)
+            {
+                using var dataStream = new MemoryStream();
+                await addStudentRequest.ProfileImage.CopyToAsync(dataStream);
+                studentAdd.ProfilePicture = dataStream.ToArray();
+            }
+
+            await _studentRepo.AddAsync(studentAdd);
             return RedirectToAction("List");
         }
 
@@ -52,7 +63,11 @@ namespace test_apps_3.Controllers
                     Id = viewForEdit.Id,
                     Name = viewForEdit.Name,
                     Email = viewForEdit.Email,
-                    session = viewForEdit.session
+                    session = viewForEdit.session,
+                    Address = viewForEdit.Address,
+                    Gender = viewForEdit.Gender,
+                    Date = viewForEdit.Date,
+                    ProfilePicture = viewForEdit.ProfilePicture
                 };
                 return View(editStudentRequest);
             }
@@ -67,8 +82,26 @@ namespace test_apps_3.Controllers
                 Id = editStudentRequest.Id,
                 Name = editStudentRequest.Name,
                 Email = editStudentRequest.Email,
-                session = editStudentRequest.session
+                session = editStudentRequest.session,
+                Address = editStudentRequest.Address,
+                Gender = editStudentRequest.Gender,
+                Date = editStudentRequest.Date
             };
+
+            // Handling Image Update
+            if (editStudentRequest.ProfileImage != null)
+            {
+                using var dataStream = new MemoryStream();
+                await editStudentRequest.ProfileImage.CopyToAsync(dataStream);
+                _studentEdit.ProfilePicture = dataStream.ToArray();
+            }
+            else
+            {
+                // Retain existing picture if no new file is uploaded
+                var existing = await _studentRepo.GetAsync(editStudentRequest.Id);
+                _studentEdit.ProfilePicture = existing?.ProfilePicture;
+            }
+
             var updatedStudent = await _studentRepo.UpdateAsync(_studentEdit);
             if (updatedStudent != null)
             {

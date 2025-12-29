@@ -50,9 +50,15 @@ namespace test_apps_3.Repository
                 _existingStudent.Name = studentClass.Name;
                 _existingStudent.Email = studentClass.Email;
                 _existingStudent.session = studentClass.session;
+                _existingStudent.Address = studentClass.Address;
+                _existingStudent.Gender = studentClass.Gender;
+                _existingStudent.Date = studentClass.Date;
+                _existingStudent.ProfilePicture = studentClass.ProfilePicture;
+
                 await _appsDbContext.SaveChangesAsync();
                 return _existingStudent;
-            };
+            }
+            ;
             return null;
         }
     }
