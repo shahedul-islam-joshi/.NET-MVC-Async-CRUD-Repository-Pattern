@@ -43,35 +43,36 @@ It demonstrates **asynchronous programming**, **Repository Pattern**, and **inte
 
 ```text
 test_apps-3/
-├── Connected Services/
-├── Dependencies/
-├── Properties/
-├── wwwroot/
 ├── Controllers/
-│   ├── AdminStudentController.cs
-│   └── HomeController.cs
+│   ├── AdminStudentController.cs    # Logic for student CRUD operations
+│   └── HomeController.cs            # Home and Privacy page logic
 ├── Data/
-│   └── AppsDbContext.cs
-├── Migrations/
+│   └── AppsDbContext.cs             # Entity Framework Core database context
+├── Migrations/                      # Database schema migration history
 ├── Models/
 │   ├── DomainModel/
-│   │   └── StudentClass.cs
+│   │   └── StudentClass.cs          # Database entity model
 │   ├── ViewModel/
-│   │   ├── AddStudentRequest.cs
-│   │   └── EditStudentRequest.cs
-│   └── ErrorViewModel.cs
-├── Repository/
-│   ├── IStudentRepo.cs
-│   └── StudentRepo.cs
+│   │   ├── AddStudentRequest.cs     # Model for creating students
+│   │   └── EditStudentRequest.cs    # Model for updating students
+│   └── ErrorViewModel.cs            # Application error handling model
+├── Repository/                      # Repository Pattern implementation
+│   ├── IStudentRepo.cs              # Interface for student operations
+│   └── StudentRepo.cs               # Concrete implementation (Async)
 ├── Views/
-│   ├── AdminStudent/
+│   ├── AdminStudent/                # Management views
 │   │   ├── Add.cshtml
 │   │   ├── Edit.cshtml
 │   │   └── List.cshtml
 │   ├── Home/
-│   ├── Shared/
-│   ├── _ViewImports.cshtml
-│   └── _ViewStart.cshtml
-├── .gitignore
-├── appsettings.json
-└── Dockerfile
+│   │   ├── Index.cshtml
+│   │   └── Privacy.cshtml
+│   ├── Shared/                      # Layout and partial views
+│   │   ├── _ViewImports.cshtml
+│   │   └── _ViewStart.cshtml
+├── wwwroot/                         # Static files (CSS, JS, Libs)
+├── .gitignore                       # Git exclusion rules
+├── appsettings.json                 # Connection strings and config
+├── Dockerfile                       # Containerization setup
+├── Program.cs                       # App entry point and DI container
+└── README.md                        # Documentation
